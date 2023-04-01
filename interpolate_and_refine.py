@@ -119,7 +119,7 @@ if __name__ == '__main__':
     edges_fname = "data/output/edges.txt"
 
     #sparse data
-    input_folder = "data/input/"
+    input_folder = "data/chicago_250/"
 
     #imputation path
     output_folder = "data/output/GTI"
@@ -146,7 +146,7 @@ if __name__ == '__main__':
     node_id_to_coords = {}
     edges_to_time = {}
     dis = 0 
-    files = list(os.listdir(input_folder))[:10000]
+    files = list(os.listdir(input_folder))
     disconnected_nodes = []
 
     with open(nodes_fname) as f:

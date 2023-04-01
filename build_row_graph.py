@@ -12,7 +12,7 @@ from datetime import datetime
 
 start_time = time.time()
 
-sparse_folder = "data/input/"
+sparse_folder = "data/chicago_250/"
 output_folder = "data/output/"
 filenames = listdir(sparse_folder)
 

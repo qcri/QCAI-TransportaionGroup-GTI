@@ -6,7 +6,7 @@ The input is a folder containing the sparse trajectories that we want to be impu
 
 <i> car_id, latitude, longtitude, timestamp </i> 
 
-Check the folder data/input for an example collection of trips gathered from https://www.kaggle.com/competitions/nyc-taxi-trip-duration/data.
+We have included two sample datasets, one at data/chicago_250 which is artificially sparsified by us every 250 meters and one at data/nyc that only has a pickup and droppoff location for each trip, collected from https://www.kaggle.com/competitions/nyc-taxi-trip-duration/data.
 
 ## Running GTI 
 GTI has 3 steps to generate an imputation. Namely generating the RoW graph, running the graph on a Go server and then querying for imputations. Below we show a general workflow: 
@@ -26,6 +26,6 @@ In another terminal run the interpolation sending requests at the same port (333
 ```
 python interpolate_and_refine.py 33333
 ```
-
+Note that in lines 117, 119, 122, 125, 126 you can manually change the location of your input/output trajectories. 
 ## Output
 The output of interpolate_and_refine.py will be a folder in the output folder named GTI where the GTI imputation and the corresponding timestamps are stored and another GTI_refined folder where the imputed trajectories have been refined as per the best-fit algoorithm described in the paper. 
