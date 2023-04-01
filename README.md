@@ -28,4 +28,4 @@ python interpolate_and_refine.py 33333
 ```
 Note that in lines 117, 119, 122, 125, 126 you can manually change the location of your input/output trajectories. 
 ## Output
-The output of interpolate_and_refine.py will be a folder in the output folder named GTI where the GTI imputation and the corresponding timestamps are stored and another GTI_refined folder where the imputed trajectories have been refined as per the best-fit algoorithm described in the paper. 
+The output of interpolate_and_refine.py will be a folder in the output folder named GTI where the GTI imputation and the corresponding timestamps are stored and another GTI_refined folder where the imputed trajectories have been refined as per the best-fit algorithm described in the paper. 
